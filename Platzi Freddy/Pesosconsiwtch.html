@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso en otros Planetas de la Galaxia</title>
+        
+</head>
+<body>
+    <h1>¿Quieres saber tu peso en Marte o Jupiter?</h1>
+        <script>
+            var peso = parseInt(prompt("¿Cual es tu peso?"))
+            var planeta = parseInt(prompt("Elige un planeta:\nMarte es 1 Jupiter es 2"))
+            var g_tierra = 9.81;
+            var g_marte = 3.7;
+            var g_jupiter = 24.8;
+            switch (planeta){
+            case "1":
+            peso_final = peso * g_marte / g_tierra;
+            planeta= ("Marte");
+            break;
+            case "2":
+            peso_final = peso * g_jupiter / g_tierra;
+            planeta = ("Jupiter");
+            break;
+            default:
+            peso_final = 100000000000
+            planeta = ("Krypton");
+            break;
+            }
+        document.write("Tu peso en  " + planeta + " es<strong> " + peso_final + " kilos</strong>")
+        </script>
+</body>
+</html>
+    
