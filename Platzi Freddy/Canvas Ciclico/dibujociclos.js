@@ -1,3 +1,4 @@
+alert ("Feliz CUmpleaños Emiliano!!!")
 var d = document.getElementById("dibujito");
 var lienzo = d.getContext("2d");
 
@@ -9,6 +10,6 @@ function dibujarlinea(color, xinicial, yinicial, xfinal, yfinal){
 lienzo.strokeStyle = color;
 lienzo.moveTo(xinicial, yinicial);
 lienzo.lineTo(xfinal, yfinal);
-lienzo.stroke();
+lienzo.stroke();ç
 lienzo.closePath();
 }
